@@ -1,0 +1,22 @@
+deep_thinking:
+  enhanced:
+    # ToT 配置
+    tot_enabled: false
+    tot_config:
+      max_depth: 3
+      max_branches: 3
+      beam_width: 2
+      score_threshold: 0.8
+      exploration_strategy: "beam"
+    
+    # ReAct 配置
+    react_enabled: false
+    react_config:
+      max_iterations: 5
+      auto_reflect: true
+      tools:
+        - browser_navigate
+        - browser_click
+        - terminal
+        - search_files
+        - read_file
